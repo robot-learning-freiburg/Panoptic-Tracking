@@ -29,8 +29,6 @@ python convert_semantic_kitti_gt.py  --root_dir path_to_SemanticKITTI/sequences 
 
 #### Running Evalaution
 ```
-
-
 python evaluate.py --gt_dir path_to_ground_truths --prediction_dir path_to_predictions
   ```
 * MOTSA, sMOTSA, MOTSP, PTQ and sPTQ metric evaluations are saved in a results.json file in the current directory.
