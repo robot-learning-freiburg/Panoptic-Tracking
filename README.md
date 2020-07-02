@@ -2,7 +2,7 @@
 
 ## Official implementation for "Multi-Object Panoptic Tracking"  <br/>[[Paper](https://arxiv.org/abs/2004.08189)] 
 
-[Juana Valeria Hurtado ](http://rl.uni-freiburg.de/people/hurtado), [Rohit Mohan](http://rl.uni-freiburg.de/people), [Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/), and [Abhinav Valada](http://rl.uni-freiburg.de/people/valada).
+[Juana Valeria Hurtado](http://rl.uni-freiburg.de/people/hurtado), [Rohit Mohan](http://rl.uni-freiburg.de/people), [Wolfram Burgard](http://www2.informatik.uni-freiburg.de/~burgard/), and [Abhinav Valada](http://rl.uni-freiburg.de/people/valada).
 
 
 ## System Requirements
