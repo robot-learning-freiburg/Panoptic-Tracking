@@ -65,7 +65,6 @@ If you find the code useful for your research, please consider citing our paper:
   journal={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshop on Scalability in Autonomous Driving},
   year={2020}
 }
-}
 ```
 
 ## License
