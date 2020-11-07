@@ -93,9 +93,9 @@ def get_MOTSP_metrics(panoptic_buffer, num_stuff, seq_trajectories, class_trajec
     size = panoptic_buffer[0].shape[0]
     IDS, softIDS = compute_ids(seq_trajectories, class_trajectories, iou_trajectories, panoptic_buffer[0].shape[0])
     
-    MOTSA = (torch.max(panoptic_buffer[1][num_stuff:]-panoptic_buffer[2][num_stuff:]-IDS[num_stuff:],torch.zeros((size-num_stuff,), dtype=torch.double)))/(panoptic_buffer[1][num_stuff:]+panoptic_buffer[3][num_stuff:]+1e-8)
+    MOTSA = (panoptic_buffer[1][num_stuff:]-panoptic_buffer[2][num_stuff:]-IDS[num_stuff:])/(panoptic_buffer[1][num_stuff:]+panoptic_buffer[3][num_stuff:]+1e-8)
     
-    sMOTSA =(torch.max(panoptic_buffer[0][num_stuff:]-panoptic_buffer[2][num_stuff:]-IDS[num_stuff:],torch.zeros((size-num_stuff,),dtype=torch.double)))/(panoptic_buffer[1][num_stuff:]+panoptic_buffer[3][num_stuff:]+1e-8)
+    sMOTSA =(panoptic_buffer[0][num_stuff:]-panoptic_buffer[2][num_stuff:]-IDS[num_stuff:])/(panoptic_buffer[1][num_stuff:]+panoptic_buffer[3][num_stuff:]+1e-8)
 
     MOTSP = (panoptic_buffer[0][num_stuff:])/(panoptic_buffer[1][num_stuff:]+1e-8) 
 
